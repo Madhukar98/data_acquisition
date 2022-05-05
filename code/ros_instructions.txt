@@ -3,10 +3,10 @@ ROS tutorial - http://wiki.ros.org/ROS/Tutorials
 
 Step 1 : To run "roscore" command in seperate terminal for starting master
 Step 2 : sudo chmod 666 /dev/ttyACM0
-Step 3 : To start publisher, run command rosrun rosserial_python serial_node.py /dev/ttyACM0
+Step 3 : To start publisher, run command rosrun rosserial_python serial_node.py /dev/ttyACM0 _baud:=9600
 
 For running subscriber, have to create a ros package, then run following command
 rosrun rospkg_name ros_subscriber.py
 
 For reading value from topic
-rosecho topic_name
+rostopic echo /topic_name
